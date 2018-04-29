@@ -1,20 +1,114 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <!-- Metadata -->
-      <title>Techstitution</title>
-      <link type="text/css" rel="stylesheet" href="style.css" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-   </head>
+<head>
+  <!-- Metadata -->
+  <title>Techstitution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-   <body>
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               Hello from Techstitution!
-            </div>
-         </div>
+  <div class="kontrata h-100 row align-items-center">
+    <div class="container">
+      <h3 id="Titulli" class="text-primary">Shto kontratën e re</h3><br>
+    </div>
+    <div class="container">
+      <h5>Prokurimi:</h5>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="nr.prokurimit">Nr.rendor i prokurimit</label><br>
+          <input type="text" name="Nr.rendor i prokurimit" class="form-control" value="" placeholder="Nr. rendor i prokurimit" id="nr.prokurimit">
+        </div>
+        <div class="col-md-3">
+          <label for="lloji-prokurimit">Lloji prokurimit</label><br>
+          <input type="text" name="Lloji prokurimit" class="form-control" value="" placeholder="Lloji prokurimit" id="lloji-prokurimit"><br>
+        </div>
       </div>
-   </body>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="aktiviteti">Aktiviteti i prokurimit</label><br>
+          <input type="text" name="Aktiviteti i prokurimit" class="form-control" value="" placeholder="Aktiviteti i prokurimit" id="aktiviteti"><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h5>Datat:</h5>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="data-inicimit">Data e inicimit te aktivitetit te prokurimit</label><br>
+          <input type="text" name="data inicimit" class="form-control" value="" placeholder="03.03.2018" id="data-inicimit">
+        </div>
+        <div class="col-md-3">
+          <label for="data-shpalljes">Data e publikimit te shpalljes</label><br><br>
+          <input type="text" name="data shpalljes" class="form-control" value="" placeholder="03.03.2018" id="data-shpalljes"><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="data-nenshkrimit">Data e nenshkrimit te kontrates</label><br>
+          <input type="text" name="data-nenshkrimit" class="form-control" value="" placeholder="03.03.2018" id="data-nenshkrimit"><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <label for="afatet-implementimit">Afatet per implementimin e kontrates</label><br>
+      <div class="row">
+        <div class="col-md-3">
+          <input type="text" name="afatet e implementimit" class="form-control" value="" placeholder="03.03.2018" id="afatet-implementimit">
+        </div>
+        <div class="col-md-3">
+          <input type="text" name="afatet e implementimit" class="form-control" value="" placeholder="03.03.2018"><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="data-permbylljes">Data e permbylljes se kontrates (data e pranimit te parakohshem / preliminar)</label><br>
+          <input type="text" name="data permbylljes" class="form-control" value="" placeholder="03.03.2018" id="data-permbylljes"><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h5>Çmimi dhe të dhënat tjera</h5>
+      <div class="row">
+        <div class="col-md-3">
+          <label for="cmimi-kontrates">Çmimi i kontratës (duke përfshirë të gjitha taksat)</label><br>
+          <input type="text" name="cmimi i kontrates" class="form-control" value="" placeholder="Çmimi i kontratës" id="cmimi-kontrates">
+        </div>
+        <div class="col-md-3">
+          <label for="cmimi-total">Çmimi total i paguar për kontratën</label><br><br>
+          <input type="text" name="cmimi total i paguar" class="form-control" value="" placeholder="Çmimi total" id="cmimi-total"><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="emri-dhe-mbiemri">Emri i të cilit i është dhënë kontrata</label><br>
+          <input type="text" name="emri dhe mbiemri i pronarit te kontrates" class="form-control" value="" placeholder="Emri dhe Mbiemri" id="emri-dhe-mbiemri"><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <button type="button" class="btn btn-secondary btn-block" name="button">FSHIJ</button>
+        </div>
+        <div class="col-md-3">
+          <button type="button" class="btn btn-primary btn-block" name="button">DËRGO</button><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
